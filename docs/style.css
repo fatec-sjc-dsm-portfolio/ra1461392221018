@@ -1,0 +1,143 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* About Me */
+#aboutme {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.mainPhoto {
+    width: 300px;
+    height: auto;
+    border-radius: 25%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact img {
+    width: 40px;
+    height: auto;
+}
+
+/* Skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.skills li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.badgeXp img {
+    height: 45px;
+    max-width: 100%;
+}
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer img {
+    width: 40px;
+    height: auto;
+    border-radius: 25%;
+}

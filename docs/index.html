@@ -1,39 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Augusto Henrique Buin</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        h2 {
-            margin: 10px 0;
-        }
-
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Portfolio - Augusto Henrique Buin</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h2>Bem-vindo!</h2>
-    <h2>Me chamo Augusto Henrique Buin, e esse é meu portfólio!</h2>
-    <img src="assets/pic1.jpeg" alt="1ª foto minha">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#xp">My Experience</a></li>
+            <li><a href="#projects">My Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="aboutme">
+        <h2>Hey There! 👋</h2>
+        <img src="./assets/pic1.jpeg" alt="Photo of Augusto" class="mainPhoto">
+        <p><strong>My name's Augusto Henrique Buin</strong>, and I have <strong>22 years</strong>!</p>
+        <p>I'm currently a <strong>Fullstack Software Developer</strong> at the <strong>6th semester</strong> of the
+            college, where i study <strong>Multiplatform Software Development</strong>. I also am a
+            <strong>monitor</strong> at the college (<strong>FATEC</strong>), where I develop a software to collect
+            <strong>students' data</strong>.
+        </p>
+        <p>Before my tech journey began, I graduated from the <strong>National Service for Industrial Learning
+                (SENAI)</strong> as a <strong>Chemistry Technician</strong>, and did a lot of <strong>community
+                projects</strong> back in high school.</p>
+        <p>I'm excited to share my projects and experiences here! <strong>Feel free to contact Me!</strong> </p>
+    </section>
+    <hr>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me!</h2> <br>
+        <a href="mailto:augusto.henrique.buin@gmail.com"><img src="./assets/blueMailLogo.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/augusto-henrique-buin/" target="_blank"><img
+                src="./assets/blueLinkedinLogo.jpg" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/augusto_buin/" target="_blank"><img src="./assets/blueInstaLogo.jpg"
+                alt="Instagram"></a>
+    </section>
+    <hr>
+
+    <section id="xp">
+        <h2>Experience</h2>
+        <h3>Technologies I have experience with:</h3>
+        <ul class="skills">
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/HTML5-151515?style=for-the-badge&logo=html5&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/CSS3-151515?style=for-the-badge&logo=css3&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Tailwind-151515?style=for-the-badge&logo=tailwindCSS&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Python-151515?style=for-the-badge&logo=python&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/PandasAI-151515?style=for-the-badge&logo=pandas&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Java-151515?style=for-the-badge&logo=openjdk&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Spring-151515?style=for-the-badge&logo=spring&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/JavaScript-151515?style=for-the-badge&logo=javascript&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/TypeScript-151515?style=for-the-badge&logo=typescript&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/React-151515?style=for-the-badge&logo=react&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Node.js-151515?style=for-the-badge&logo=nodedotjs&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/MySQL-151515?style=for-the-badge&logo=mysql&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/PostgreSQL-151515?style=for-the-badge&logo=postgreSQL&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/MongoDB-151515?style=for-the-badge&logo=MongoDB&logoColor=4B70F1" />
+            </li>
+            <li class="badgeXp"><img
+                    src="https://img.shields.io/badge/Docker-151515?style=for-the-badge&logo=Docker&logoColor=4B70F1" />
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="./assets/bannerPynk.png" alt="Banner Py.nK">
+            <p>An internet banking system with transaction management.</p>
+            <a href="https://github.com/pynkAPI/API-1-DSM_22" target="_blank">Project Repository</a>
+        </div>
+        <div class="project">
+            <img src="./assets/bannerSabia.png" alt="Banner Sabiá">
+            <p>Grain entry inspection system.</p>
+            <a href="https://github.com/Equipe-Beelieve/API-2DSM-2023" target="_blank">Project Repository</a>
+        </div>
+    </section> <br>
+
+
+    <footer class="footer">
+        <p>There's a lot more coming, keep an eye out!</p>
+        <p>"There can be no triumph without loss, No victory without suffering, No freedom without sacrifice." - J.R.R.
+            Tolkien</p>
+        <a href="mailto:augusto.henrique.buin@gmail.com"><img src="./assets/blueMailLogo.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/augusto-henrique-buin/" target="_blank"><img
+                src="./assets/blueLinkedinLogo.jpg" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/augusto_buin/" target="_blank"><img src="./assets/blueInstaLogo.jpg"
+                alt="Instagram"></a>
+    </footer>
 </body>
 
 </html>
