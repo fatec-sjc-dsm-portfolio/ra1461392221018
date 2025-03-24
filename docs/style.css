@@ -36,12 +36,27 @@ h2 {
     top: 0;
     z-index: 1000;
     font-size: 14px;
+    box-sizing: border-box;
+}
+
+.navbar .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo {
+    margin-left: 0;
+    /* flex: 1; */
+    font-size: 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin-left: auto;
 }
 
 .nav-links li a {
@@ -56,6 +71,9 @@ h2 {
 }
 
 #theme-toggle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background: none;
     border: none;
     color: white;
