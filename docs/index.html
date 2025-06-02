@@ -30,7 +30,7 @@
                 <div class="container">
                         <h2>Hey There! 👋</h2>
                         <img src="./assets/me.jpg" alt="Photo of Augusto" class="mainPhoto">
-                        <p><strong>My name's Augusto Henrique Buin</strong>, and I have <strong>22 years</strong>!</p>
+                        <p><strong>My name's Augusto Henrique Buin</strong>, and I have <strong>23 years</strong>!</p>
                         <p>I'm currently a <strong>Fullstack Software Developer</strong> at the <strong>6th
                                         semester</strong> of the
                                 college, where i study <strong>Multiplatform Software Development</strong>. I also am a
@@ -64,18 +64,242 @@
         </section>
 
         <section id="projects" class="projects">
-                <h2 class="tittle">My Projects</h2>
+                <h2 class="title">My Projects</h2>
                 <div class="project-grid">
+
+                        <!-- Monitoria Acadêmica -->
                         <div class="project-card">
-                                <img src="./assets/bannerPynk.png" alt="Py.nk Internet Banking Project Banner">
-                                <p>Internet banking system with transaction management.</p>
-                                <a href="https://github.com/AugustoBuin/PynkApi.git">View Project</a>
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerMonitoria.png" alt="Monitoria Project">
+                                        <h3>Academic Monitoring</h3>
+                                        <p>Data collection and processing system for students.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Product Owner and Fullstack Developer. Led the development of the
+                                                        data collection system for students, creating modern interfaces
+                                                        and managing backlog and tasks.</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">Next.js</span>
+                                                        <span class="tag">TypeScript</span>
+                                                        <span class="tag">MongoDB</span>
+                                                        <span class="tag">JavaScript</span>
+                                                        <span class="tag">Axios</span>
+                                                        <span class="tag">Tailwind</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <p>Private Repository - I'll have a version of this project in my
+                                                        account very
+                                                        soon!</p>
+                                        </div>
+                                </div>
                         </div>
+
+                        <!-- DeskData -->
                         <div class="project-card">
-                                <img src="./assets/bannerSabia.png" alt="Sabiá Entry Inspection System Banner">
-                                <p>Grain entry inspection system.</p>
-                                <a href="https://github.com/AugustoBuin/SabiaApi.git">View Project</a>
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerDeskData.png" alt="DeskData Project">
+                                        <h3>DeskData</h3>
+                                        <p>API for data management with NLP integration.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Scrum Master and Backend Developer. Managed team organization,
+                                                        documentation, workflows, and developed backend functionalities
+                                                        using Natural Language Processing (NLP).</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">Node.js</span>
+                                                        <span class="tag">TypeScript</span>
+                                                        <span class="tag">Express</span>
+                                                        <span class="tag">MongoDB</span>
+                                                        <span class="tag">Docker</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/DeskData-Api/Documentacao"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
                         </div>
+
+                        <!-- CloudSpark -->
+                        <div class="project-card">
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerCloudSpark.png" alt="CloudSpark Project">
+                                        <h3>CloudSpark</h3>
+                                        <p>Satellite image analysis with AI and interactive maps.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Frontend Developer. Implemented the interactive map and download
+                                                        functionalities for satellite images.</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">React</span>
+                                                        <span class="tag">TypeScript</span>
+                                                        <span class="tag">PostgreSQL</span>
+                                                        <span class="tag">Docker</span>
+                                                        <span class="tag">Python</span>
+                                                        <span class="tag">YOLO</span>
+                                                        <span class="tag">Roboflow</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/AugustoBuin/cloudSpark-documentation.git"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- SimpaTech -->
+                        <div class="project-card">
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerSimpaTech.png" alt="SimpaTech Project">
+                                        <h3>SimpaTech</h3>
+                                        <p>Data processing system for meteorological stations.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Scrum Master. Led the team organization using Jira and Confluence
+                                                        with DevOps-focused documentation and workflow automation.</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">React</span>
+                                                        <span class="tag">TypeScript</span>
+                                                        <span class="tag">JavaScript</span>
+                                                        <span class="tag">MySQL</span>
+                                                        <span class="tag">MongoDB</span>
+                                                        <span class="tag">C++</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/AugustoBuin/Simpatech-Principal.git"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Beelieve -->
+                        <div class="project-card">
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerBeelieve.png" alt="Beelieve Project">
+                                        <h3>Beelieve</h3>
+                                        <p>Project management platform for complex teams.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Scrum Master. Managed a large team, facilitated ceremonies, and
+                                                        adapted the workflow to support team members with diverse needs.
+                                                </p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">React</span>
+                                                        <span class="tag">Java</span>
+                                                        <span class="tag">Spring</span>
+                                                        <span class="tag">MySQL</span>
+                                                        <span class="tag">MongoDB</span>
+                                                        <span class="tag">Tailwind</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/AugustoBuin/Beelieve-Principal.git"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Sabiá -->
+                        <div class="project-card">
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerSabia.png" alt="Sabia Project">
+                                        <h3>Sabiá</h3>
+                                        <p>Grain receiving and inspection system.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Frontend Developer. Created user interfaces, implemented receiving
+                                                        business rules, and corrected styles.</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">React</span>
+                                                        <span class="tag">Node.js</span>
+                                                        <span class="tag">Express</span>
+                                                        <span class="tag">TypeScript</span>
+                                                        <span class="tag">JavaScript</span>
+                                                        <span class="tag">MySQL</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/AugustoBuin/SabiaApi.git"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Py.nk -->
+                        <div class="project-card">
+                                <div class="card-header" onclick="toggleCard(this)">
+                                        <img src="./assets/bannerPynk.png" alt="Pynk Project">
+                                        <h3>Py.nk</h3>
+                                        <p>Internet banking system with transaction management.</p>
+                                        <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="card-body">
+                                        <div class="section">
+                                                <h4>My Role</h4>
+                                                <p>Backend Developer. Developed functionalities related to user accounts
+                                                        and agency management.</p>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Technologies</h4>
+                                                <div class="tags">
+                                                        <span class="tag">Python</span>
+                                                        <span class="tag">Flask</span>
+                                                        <span class="tag">MySQL</span>
+                                                        <span class="tag">JavaScript</span>
+                                                </div>
+                                        </div>
+                                        <div class="section">
+                                                <h4>Repository</h4>
+                                                <a href="https://github.com/AugustoBuin/PynkApi.git"
+                                                        target="_blank">View on GitHub</a>
+                                        </div>
+                                </div>
+                        </div>
+
                 </div>
         </section>
 
@@ -93,13 +317,8 @@
                         J.R.R. Tolkien</p>
                 <p>Fullstack Developer | Open to Opportunities | <a href="https://github.com/AugustoBuin">GitHub</a></p>
         </footer>
+        <script src="./script.js"></script>
 
-        <script>
-                const themeToggle = document.getElementById("theme-toggle");
-                themeToggle.addEventListener("click", () => {
-                        document.body.classList.toggle("dark-mode");
-                });
-        </script>
 </body>
 
 </html>
