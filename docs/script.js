@@ -1,35 +1,31 @@
-// Toggle expand/collapse project card
-function toggleCard(element) {
-    const card = element.parentElement;
-    const body = card.querySelector('.card-body');
-    const icon = element.querySelector('.toggle-icon');
+// Abre o modal com conteúdo do card
+document.querySelectorAll('.project-card .card-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const card = this.parentElement;
+        const modal = document.getElementById('projectModal');
+        const modalBody = document.getElementById('modalBody');
 
-    const allBodies = document.querySelectorAll('.card-body');
-    const allIcons = document.querySelectorAll('.toggle-icon');
+        // Copia o conteúdo interno da card-body para o modal
+        const content = card.querySelector('.card-body').innerHTML;
+        modalBody.innerHTML = content;
 
-    // Close all cards
-    allBodies.forEach(b => {
-        if (b !== body) {
-            b.classList.remove('open');
-        }
+        modal.classList.add('show');
     });
+});
 
-    allIcons.forEach(i => {
-        if (i !== icon) {
-            i.textContent = '+';
-        }
-    });
+// Fecha o modal ao clicar no botão de fechar
+document.querySelector('.close-button').addEventListener('click', () => {
+    document.getElementById('projectModal').classList.remove('show');
+});
 
-    // Change the selected card
-    const isOpen = body.classList.contains('open');
-    if (isOpen) {
-        body.classList.remove('open');
-        icon.textContent = '+';
-    } else {
-        body.classList.add('open');
-        icon.textContent = '-';
+// Fecha o modal ao clicar fora da modal-content
+window.addEventListener('click', function (event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target === modal) {
+        modal.classList.remove('show');
     }
-}
+});
+
 
 // Toggle Dark Mode
 const themeToggle = document.getElementById("theme-toggle");
